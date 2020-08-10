@@ -184,7 +184,7 @@ evens_in_b
 
 # Exercise 9 - print out the shape of the array b.
 
-print(b.shape)
+print(np.shape(b))
 
 # Exercise 10 - transpose the array b.
 
@@ -209,11 +209,25 @@ c
 # HINT, you'll first need to make sure that the "c" variable is a numpy array prior to using numpy array methods.
 # Exercise 1 - Find the min, max, sum, and product of c.
 
+min_val = c.min()
+max_val = c.max()
+sum_val = c.sum()
+product = np.product(c)
+print(f"\n Minimum C Value: {min_val}\n Maximum C Value: {max_val}\n Sum Value of C: {sum_val}\n Total Product of C: {product}")
+
 # Exercise 2 - Determine the standard deviation of c.
+
+std_c = c.std()
+std_c
 
 # Exercise 3 - Determine the variance of c.
 
+var_c = np.var(c)
+var_c
+
 # Exercise 4 - Print out the shape of the array c
+
+print(np.shape(c))
 
 # Exercise 5 - Transpose c and print out transposed result.
 
