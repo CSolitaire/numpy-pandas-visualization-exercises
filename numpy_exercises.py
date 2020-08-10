@@ -230,8 +230,12 @@ var_c
 print(np.shape(c))
 
 # Exercise 5 - Transpose c and print out transposed result.
+c = np.transpose(c)
+print(c)
 
 # Exercise 6 - Get the dot product of the array c with c. 
+
+
 
 # Exercise 7 - Write the code necessary to sum up the result of c times c transposed. Answer should be 261
 
