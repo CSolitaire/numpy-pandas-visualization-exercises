@@ -52,31 +52,55 @@ z_score
 import numpy as np
 
 ## Setup 1
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+a = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
 
 # Use python's built in functionality/operators to determine the following:
 # Exercise 1 - Make a variable called sum_of_a to hold the sum of all the numbers in above list
 
+sum_of_a = a.sum()
+sum_of_a
+
 # Exercise 2 - Make a variable named min_of_a to hold the minimum of all the numbers in the above list
+
+min_of_a = a.min()
+min_of_a
 
 # Exercise 3 - Make a variable named max_of_a to hold the max number of all the numbers in the above list
 
+max_of_a = a.max()
+max_of_a
+
 # Exercise 4 - Make a variable named mean_of_a to hold the average of all the numbers in the above list
+
+mean_of_a = a.mean()
+mean_of_a
 
 # Exercise 5 - Make a variable named product_of_a to hold the product of multiplying all the numbers in the above list together
 
+product_of_a = a.prod()
+product_of_a
+
 # Exercise 6 - Make a variable named squares_of_a. It should hold each number in a squared like [1, 4, 9, 16, 25...]
+
+squares_of_a = np.square(a)
+squares_of_a
 
 # Exercise 7 - Make a variable named odds_in_a. It should hold only the odd numbers
 
+odds_in_a = a[a % 2 != 0]
+odds_in_a
+
 # Exercise 8 - Make a variable named evens_in_a. It should hold only the evens.
+
+evens_in_a = a[a % 2 == 0]
+evens_in_a
 
 ## What about life in two dimensions? A list of lists is matrix, a table, a spreadsheet, a chessboard...
 ## Setup 2: Consider what it would take to find the sum, min, max, average, sum, product, and list of squares for this list of two lists.
-b = [
-    [3, 4, 5],
-    [6, 7, 8]
-]
+
+b = np.array([[3, 4, 5],
+              [6, 7, 8]])
+b
 
 # Exercise 1 - refactor the following to use numpy. Use sum_of_b as the variable. **Hint, you'll first need to make sure that the "b" variable is a numpy array**
 sum_of_b = 0
